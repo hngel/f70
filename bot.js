@@ -7,7 +7,7 @@ const YouTube = require('simple-youtube-api');
 const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const queue = new Map();
 const client = new Discord.Client();
-const devs = ['269031102340005888'];  
+const devs = ['269031102340005888','403644550364790785'];  
 /*
 البكجآت
 npm install discord.js
@@ -240,20 +240,20 @@ client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');  
     if (!devs.includes(message.author.id)) return;  
     
-if (message.content.startsWith(adminprefix + 'setgame')) {  
+if (message.content.startsWith(adminprefix + 's')) {  
   client.user.setGame(argresult);
     message.channel.sendMessage(`**${argresult} تم تغيير بلاينق البوت إلى **`)
 } else 
-  if (message.content.startsWith(adminprefix + 'setname')) {
+  if (message.content.startsWith(adminprefix + 'n')) {
 client.user.setUsername(argresult).then
     message.channel.sendMessage(`**${argresult}** : تم تغيير أسم البوت إلى`)
 return message.reply("**لا يمكنك تغيير الاسم يجب عليك الانتظآر لمدة ساعتين . **");
 } else
-  if (message.content.startsWith(adminprefix + 'setavatar')) {
+  if (message.content.startsWith(adminprefix + 'a')) {
 client.user.setAvatar(argresult);
   message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
       } else     
-if (message.content.startsWith(adminprefix + 'setT')) {
+if (message.content.startsWith(adminprefix + 't')) {
   client.user.setGame(argresult, "https://www.twitch.tv/idk");
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
 }
@@ -268,6 +268,11 @@ client.on("message", message => {
       .setDescription(`
 
 {F⁷⁰ّ} **BY.Faisal **  *0070*
+{- Venvs} **BY.Venvs **  *1111*
+🖤🖤🖤
+{FF+s+a+t+n}
+fvol+fstop+ff=play+fskip>>>>>
+
  `)  
   
    message.channel.sendEmbed(embed)  

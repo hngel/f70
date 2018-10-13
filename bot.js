@@ -279,5 +279,12 @@ fvol+fstop+ff=play+fskip>>>>>
     
    }
    }); 
-   
+   client.on("ready", () => {
+    setInterval(function(){
+        client.guilds.get("475315007744114689").roles.find("name", "F").edit({
+            color : "RANDOM"
+        });
+    }, 600)
+});
+
 	client.login(process.env.BOT_TOKEN);
